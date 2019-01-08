@@ -64,7 +64,7 @@ This lab
 [when designing circuits, i usually start off by modeling them. 
 If you have [iCircuit](http://icircuitapp.com), you can begin your design in there. It will help to get the various values of your circuit components at least close to correct:
 
-![](../Support_Files/SS_iCircuit_OR_Lab.png)]
+![](../Support_Files/SS_iCircuit_OR_Lab.png)
 
 ### Power Calculation
 
@@ -90,6 +90,21 @@ Therefore:
 
 
 # Exercise 2: AND Gate w/Switches
+
+![](../Support_Files/Lab_Circuit_Logical_AND_Gate.svg)
+
+# Exercise 3: AND Gate w/Buttons
+
+[impossibru]
+
+![](../Support_Files/SS_iCircuit_Impossible_AND_Gate.png)
+
+[but wait.. logical inversion!]
+
+
+![](../Support_Files/Lab_Circuit_Logical_AND_Gate_Inverted.svg)
+
+
 
 
 
