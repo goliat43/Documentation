@@ -4,7 +4,7 @@ title: File IO
 subtitle: Using the onboard micro SD card as a persistent storage device.
 ---
 
-# Info
+## Info
 
 Netduino 2 and 3 can access up to 2GB of storage on a Micro SD Card which provide a persistent storage mechanism similar to a hard drive. This can be useful for storing application configuration information that can be read at boot-up, or for storing log information.
 
@@ -38,7 +38,7 @@ namespace SDCardIO
 		public static void Main()
 		{
 			// some debug output for funsies 
-			OutputSDInfo ();
+			OutputSDInfo();
 
 			var volume = new VolumeInfo("SD");
 
@@ -49,28 +49,28 @@ namespace SDCardIO
 				var path = Path.Combine("SD","test.txt");
 
 				// write some text to a file
-				File.WriteAllBytes (path, Encoding.UTF8.GetBytes ("Foooooooo"));
+				File.WriteAllBytes(path, Encoding.UTF8.GetBytes("Foooooooo"));
 
 				// Must call flush to write immediately. Otherwise, there's no guarantee 
 				// as to when the file is written. 
 				volume.FlushAll();
 
 			} else {
-				Debug.Print ("There doesn't appear to be an SD card inserted");
+				Debug.Print("There doesn't appear to be an SD card inserted");
 			}
 		}
 
 		public static void OutputSDInfo()
 		{
-			var vInfo = new VolumeInfo ("SD");
+			var vInfo = new VolumeInfo("SD");
 
 			if (vInfo != null) {
-				Debug.Print ("Is Formatted: " + vInfo.IsFormatted.ToString ());
-				Debug.Print ("Total Free Space: " + vInfo.TotalFreeSpace.ToString ());
-				Debug.Print ("Total Size: " + vInfo.TotalSize.ToString ());
-				Debug.Print ("File System: " + vInfo.FileSystem);
+				Debug.Print("Is Formatted: " + vInfo.IsFormatted.ToString ());
+				Debug.Print("Total Free Space: " + vInfo.TotalFreeSpace.ToString ());
+				Debug.Print("Total Size: " + vInfo.TotalSize.ToString ());
+				Debug.Print("File System: " + vInfo.FileSystem);
 			} else {
-				Debug.Print ("There doesn't appear to be an SD card in the device.");
+				Debug.Print("There doesn't appear to be an SD card in the device.");
 			}
 
 		}

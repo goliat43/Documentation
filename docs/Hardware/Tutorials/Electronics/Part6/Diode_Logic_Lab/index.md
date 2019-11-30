@@ -4,14 +4,14 @@ title: Diode Logic Gate Lab
 subtitle: Creating simple logic control with diodes.
 ---
 
-# Intro
+## Intro
 
 In this lab we're going to create some logic gate circuits that can be used as building blocks for more complex circuit control later, and examine some interesting practical challenges of designing circuits in regards to logic inversion.
 
 These circuits use the LED circuits from the last lab as indicators of the output from the logic operations.
 
 
-# Requirements
+## Requirements
 
 | Item                                     | Approximate Cost (USD) |
 | ---------------------------------------- | ---------------------- |
@@ -69,7 +69,7 @@ This lab
 
 ### Circuit Model
 
-[when designing circuits, i usually start off by modeling them. 
+[when designing circuits, i usually start off by modeling them.
 If you have [iCircuit](http://icircuitapp.com), you can begin your design in there. It will help to get the various values of your circuit components at least close to correct:
 
 ![](../Support_Files/SS_iCircuit_OR_Lab.png)
@@ -120,4 +120,4 @@ Therefore:
 [don't have to build this]
 
 
-# [Next - Review](../Review)
+## [Next - Review](../Review)
