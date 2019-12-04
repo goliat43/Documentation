@@ -35,13 +35,17 @@ You'll need to download the source code and compile a customized version the sof
 You'll need several packages installed to compile ST-Util.
 To install, call `apt-get install` followed by the package name.
 
-Open the terminal and enter the following commands to install each package:
-* `sudo apt-get install libusb-1.0.0`
-* `sudo apt-get installgdb-multiarch`
-* `sudo apt-get installmake`
-* `sudo apt-get installcmake`
-* `sudo apt-get installdfu-util`
-* `sudo apt-get git`
+You need to install the following packages:
+* libusb-1.0.0
+* gdb-multiarch
+* make
+* cmake
+* dfu-util
+* git
+
+
+Open the terminal and enter the following command to install the required packages:
+`sudo apt-get install libusb-1.0.0 gdb-multiarch make cmake installdfu-util git`
 
 ### Compile ST-Link
 ```bash
